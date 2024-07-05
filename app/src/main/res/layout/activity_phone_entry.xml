@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".phone_entry"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/schoolkid_1"
+        android:layout_width="191dp"
+        android:layout_height="190dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/schoolkid"
+        android:contentDescription="TODO"
+        android:transitionName="logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.299" />
+    <TextView
+        android:id="@+id/text_1"
+        android:transitionName="text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTER YOUR MOBILE NUMBER :"
+        android:fontFamily="@font/rambla"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTER YOUR 10 DIGIT MOBILE NUMBER"
+        android:textSize="18sp"
+        android:fontFamily="@font/rambla"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:textCursorDrawable="@color/black">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Mobile Number"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="#FF0000"
+            app:hintTextColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="269dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#EFD80F"
+        android:padding="10dp"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"
+        android:text="PROCEED"
+        android:textColor="@color/white"
+        app:cornerRadius="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/by_proceeding_you_agree_that_you_have_read_our_tc_and_privacy_policy"
+        android:textSize="18sp"
+        android:fontFamily="@font/rambla"
+        android:textAlignment="center"
+        android:textColorLink="#EFD80F"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"/>
+
+</LinearLayout>

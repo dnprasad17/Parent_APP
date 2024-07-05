@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/p_a_r_e_n_t"
+        android:transitionName="text"
+        android:layout_width="298dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginEnd="75dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/parent"
+        android:textAlignment="center"
+        android:textColor="#FFBC10"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schoolkid_1" />
+
+    <ImageView
+        android:id="@+id/schoolkid_1"
+        android:layout_width="346dp"
+        android:layout_height="360dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/schoolkid"
+        android:contentDescription="TODO"
+        android:transitionName="logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.613"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.316" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

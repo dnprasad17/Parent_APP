@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".UserProfile"
+    android:background="#FFFAE9"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/rambla"
+            android:text="Enter your Details:"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/quantum_grey"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/rambla"
+            android:text="Enter Address Credentials :"
+            android:textColor="#3D99EF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:background="#FFFAE9"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Address"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="377dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="14dp"
+            android:drawableLeft="@drawable/ic_baseline_home_24"
+            android:shadowRadius="15"
+            android:text="Enter Address"
+            android:textColor="#00CD2D"
+            android:textSize="16sp"
+            app:cornerRadius="30dp"
+            app:strokeColor="#00CD2D"
+            app:strokeWidth="3dp"
+            android:elevation="4dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/schoolsmall" />
+
+            <com.mancj.materialsearchbar.MaterialSearchBar
+                android:id="@+id/edtTxtSchoolName"
+                style="@style/MaterialSearchBarLight"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:mt_hint="Enter School Name"
+                app:mt_maxSuggestionsCount="10"
+                app:mt_placeholder="Enter School Name"
+                app:mt_placeholderColor="@color/red"
+                app:mt_searchBarColor="#FFFAE9"
+                app:mt_speechMode="false" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/rambla"
+            android:text="Enter Child Credentials :"
+            android:textColor="#3D99EF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:background="#FFFAE9"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtTxtMedIssue"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Any Medical Issues (optional) :"
+            android:textColorHint="@color/red"
+            android:layout_gravity="center"
+            app:hintTextColor="@color/red"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="15dp"
+            app:boxStrokeColor="@color/red"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="354dp"
+                android:layout_height="60dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="390dp"
+            android:layout_height="417dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_parents" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edtTxtFatherName"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="301dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Father's Name"
+                    android:textColorHint="@color/black"
+                    app:boxStrokeColor="@color/black"
+                    app:hintTextColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="10dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_parents" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edtTxtMotherName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="302dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:hint="Mother's Name"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="368dp"
+                android:layout_height="76dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_parents" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edtTxtStudentName"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="302dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:hint="Student's Name"
+                    android:textColorHint="@color/black"
+                    app:boxStrokeColor="@color/black"
+                    app:hintTextColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:paddingStart="2dp">
+
+                <TextView
+                    android:layout_width="139dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+
+                    android:fontFamily="@font/rambla"
+                    android:text="Standard: "
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:transitionName="text" />
+
+                <Spinner
+                    android:id="@+id/standards"
+                    android:layout_width="203dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/spinner"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="center" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="37dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="35dp"
+                    android:src="@drawable/calander" />
+
+                <TextView
+                    android:id="@+id/daysTextView"
+                    android:layout_width="305dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="30dp"
+                    android:drawableRight="@drawable/dropdown"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/rambla"
+                    android:hint="Days The Student Has School"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:transitionName="text" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="353dp"
+            android:layout_height="227dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/rambla"
+                android:paddingBottom="35dp"
+                android:text="School Starts: "
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:transitionName="text" />
+
+
+            <TimePicker
+                android:id="@+id/timePickerStart"
+                android:layout_width="230dp"
+                android:layout_height="185dp"
+                android:timePickerMode="spinner" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="357dp"
+            android:layout_height="193dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/rambla"
+                android:text="School Ends:"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:transitionName="text" />
+
+            <TimePicker
+                android:id="@+id/timePickerEnd"
+                android:layout_width="230dp"
+                android:layout_height="185dp"
+                android:timePickerMode="spinner" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnProceed"
+            android:layout_width="269dp"
+            android:layout_height="65dp"
+            android:backgroundTint="#EFD80F"
+            android:layout_marginTop="5dp"
+            android:text="PROCEED"
+            android:textColor="@color/white"
+            app:cornerRadius="31dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</ScrollView>

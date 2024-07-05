@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">parent</string>
+
+    <string name="parent">P A R E N T</string>
+
+    <string name="by_proceeding_you_agree_that_you_have_read_our_tc_and_privacy_policy">By proceeding, you agree that you have read our<a href="https://www.parentschoolfleet.com/terms-and-conditions" >Terms and Conditions</a> and <a href="https://www.parentschoolfleet.com/privacy-policy"> Privacy Policy</a> of PARENT.</string>
+    <string-array name="Standards">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+        <item>Five</item>
+        <item>Six</item>
+        <item>Seven</item>
+        <item>Eight</item>
+        <item>Nine</item>
+        <item>Ten</item>
+        <item>Eleven</item>
+        <item>Twelve</item>
+    </string-array>
+</resources>
